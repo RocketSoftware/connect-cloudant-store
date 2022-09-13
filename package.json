@@ -8,27 +8,18 @@
     "eslint": "^2.10.2",
     "istanbul": "^0.4.5",
     "mocha": "^6.1.0",
-    "pre-commit": "^1.1.3",
     "sinon": "^1.17.6"
   },
   "dependencies": {
     "@cloudant/cloudant": "^4.1.0",
     "debug": "^2.6.9",
-    "express-session": "^1.13.0",
+    "express-session": "^1.17.3",
     "lodash": "^4.14.0"
   },
   "scripts": {
     "test": "mocha test --recursive",
     "coverage": "istanbul cover _mocha -- --recursive",
     "lint": "eslint index.js test lib"
-  },
-  "pre-commit": [
-    "lint",
-    "test"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/adriantanasa/connect-cloudant-store.git"
   },
   "keywords": [
     "connect-cloudant-store",
