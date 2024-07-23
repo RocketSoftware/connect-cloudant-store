@@ -1,20 +1,25 @@
 {
   "name": "connect-cloudant-store",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node JS express-session storage connector for IBM Cloudant",
   "main": "index.js",
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^2.10.2",
     "istanbul": "^0.4.5",
-    "mocha": "^6.1.0",
+    "mocha": "^10.7.0",
     "sinon": "^1.17.6"
   },
+  "overrides": {
+    "@cloudant/cloudant": {
+      "async": "^2.6.4"
+    }
+  },
   "dependencies": {
-    "@cloudant/cloudant": "^4.1.0",
+    "@cloudant/cloudant": "^4.5.1",
     "debug": "^2.6.9",
     "express-session": "^1.17.3",
-    "lodash": "^4.14.0"
+    "lodash": "^4.17.21"
   },
   "scripts": {
     "test": "mocha test --recursive",
